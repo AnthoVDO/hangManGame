@@ -1,0 +1,16 @@
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.exe
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.deps.json
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.runtimeconfig.json
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.runtimeconfig.dev.json
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.dll
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\ref\HangManGame.dll
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\HangManGame.pdb
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.AssemblyInfoInputs.cache
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.AssemblyInfo.cs
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.csproj.CoreCompileInputs.cache
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.dll
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\ref\HangManGame.dll
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.pdb
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.genruntimeconfig.cache
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.csproj.AssemblyReference.cache
