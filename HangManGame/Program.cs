@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using AsciiArt;
 
 namespace HangManGame
@@ -26,12 +27,12 @@ namespace HangManGame
             Console.WriteLine("");
         }
 
-        static char AskALetter()
+        static char AskALetter(string sentence ="Please add a letter: ")
         {
             // Add a letter
             // if more than a letter
             // return => Capital letter
-            Console.Write("Please add a letter: ");
+            Console.Write(sentence);
             var inputUser = Console.ReadLine();
             if (inputUser.Length > 1 ||inputUser.Length<1)
             {
@@ -106,14 +107,14 @@ namespace HangManGame
                 }
                 else
                 {
-                    Console.WriteLine("This letter is not inside the word");
+                    
                     if (!wrongLetters.Contains(letter))
                     {
+                        Console.WriteLine("This letter is not inside the word");
                         wrongLetters.Add(letter);
+                        lifeLeft--;
                     }
-                    
-                    
-                    lifeLeft--;
+                       
                 }
 
                 if (lifeLeft == 0)
@@ -130,12 +131,72 @@ namespace HangManGame
                 
             }
         }
+
+        static string[] LoadTheWords(string fileName)
+        {
+            try
+            {
+                return File.ReadAllLines(fileName);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"ERROR: Failed to read the file {fileName} : {ex.Message}");
+            }
+            return null;
+        }
+
+
+        static string RandomWord(string[] wordList)
+        {
+            var rand = new Random();
+            int randomNumber = rand.Next(wordList.Length);
+            return wordList[randomNumber].Trim().ToUpper();
+        }
+
+        static char TryAgain()
+        {
+            Console.Write("Try again ? ");
+            char tryAgain = AskALetter("");
+            if((tryAgain == 'Y')||(tryAgain == 'N'))
+            {
+                return tryAgain;
+            }else
+            {
+                Console.WriteLine("You need to enter Y or N");
+                return TryAgain();
+            }
+        }
         static void Main(string[] args)
         {
-            string word = "Elephant";
-            word = word.ToUpper();
-            var letterLists = new List<char> {};
-            guessWord(word, letterLists);
+            while (true)
+            {
+                var wordsList = LoadTheWords("mots.txt");
+                if ((wordsList == null) || (wordsList.Length == 0))
+                {
+                    Console.WriteLine("The word list is empty");
+                }
+                else
+                {
+                    string word = RandomWord(wordsList);
+
+                    var letterLists = new List<char> { };
+                    guessWord(word, letterLists);
+                }
+
+                // Would you continue ? y/n ?
+                char answer = TryAgain();
+                if (answer == 'N')
+                {
+                    Console.WriteLine("Thank you for the game, see you next time !");
+                    break;
+
+                }
+                else
+                {
+                    Console.Clear();
+                }
+            }
+            
         
         }
     }

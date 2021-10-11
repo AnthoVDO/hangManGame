@@ -14,3 +14,4 @@ D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\
 D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.pdb
 D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.genruntimeconfig.cache
 D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\obj\Debug\net5.0\HangManGame.csproj.AssemblyReference.cache
+D:\Dev\Git_racine\cSharp-dotnet-learn\coursC#\HangManGame\HangManGame\bin\Debug\net5.0\mots.txt
